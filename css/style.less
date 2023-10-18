@@ -26,7 +26,7 @@
     }
     button {
       padding: 10px 20px;
-      
+
       border-radius: 10px;
       font-weight: 700;
       font-size: 13px;
@@ -35,7 +35,7 @@
       color: white;
       border: 1.5px solid #fff;
     }
-    button:hover{
+    button:hover {
       color: #1c740e;
       background-color: #fff;
       border: 1.5px solid #1c740e;
@@ -228,13 +228,13 @@
       }
       .src3 {
         position: absolute;
-        right: 275px;
-        top: 275px;
+        right: 270px;
+        top: 260px;
       }
       .src4 {
         position: absolute;
-        right: 30px;
-        bottom: 30px;
+        right: 25px;
+        top: 320px;
       }
     }
   }
@@ -322,21 +322,63 @@
 }
 .action {
   h1 {
-    padding:20px 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
     text-align: center;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 900;
     color: #1c740e;
+  }
+  .galary {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    padding-bottom: 40px;
+    h2 {
+      background-color: #486284;
+      margin: 0 20px;
+      padding: 10px;
+      border-radius: 0 20px;
+      color: #fff;
+      font-weight: 800;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .gl-left {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 16px;
+
+      .gl-column {
+        flex: 30%;
+        padding: 0 4px;
+        img {
+          margin-top: 8px;
+          vertical-align: middle;
+          width: 100%;
+        }
+      }
+    }
+    .gl-right {
+      padding: 20px;
+      padding-top: 8px;
+      iframe {
+        padding-bottom: 4px;
+      }
+    }
   }
 }
 footer {
   background-color: #1c740e;
-  padding: 40px;
+  padding: 40px 40px 20px 40px;
   color: #fff;
+  h2 {
+    font-weight: 700;
+    font-size: 18px;
+  }
 
   .cnt1 {
     display: grid;
-    grid-template-columns: 2fr repeat(3, 1fr);
+    grid-template-columns: 1.3fr 1.35fr 0.8fr;
     font-size: 15px;
     p {
       padding-top: 10px;
@@ -350,6 +392,8 @@ footer {
       a:hover {
         text-decoration: underline;
       }
+      padding-bottom: 5px;
+      font-size: 14px;
     }
     img {
       width: 320px;
